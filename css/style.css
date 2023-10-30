@@ -3,7 +3,8 @@
     --header-height: 60px;
     --wrapper-bg-color: rgb(12, 176, 176);
     --header-bg-color: pink;
-    --clicked-cell-color: pink;
+    --clicked-cell-bg-color: pink;
+    --clicked-bomb-bg-color: red;
 }
 
 /* RESET */
@@ -11,6 +12,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+.my-20 {
+    margin: 20px 0;
 }
 
 /* BUTTON */
@@ -41,7 +47,7 @@ header {
 }
 
 .container {
-    height: calc(100% - 100px);
+    height: calc(100% - 142px);
     padding-top: 3rem;
     display: flex;
     align-items: center;
@@ -66,6 +72,14 @@ header {
 
 }
 
+.exit-title {
+    text-align: center;
+}
+
 .clicked-cell {
-    background-color: var(--clicked-cell-color);
+    background-color: var(--clicked-cell-bg-color);
+}
+
+.clicked-bomb {
+    background-color: var(--clicked-bomb-bg-color);
 }

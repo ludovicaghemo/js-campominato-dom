@@ -9,11 +9,11 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
 
 ## Esecuzione
 Quando l'utente clicca sul bottone "start": 
-- [] Generare un array di 16 numeri random non duplicati compresi nel range di gioco (da 1 a 100) corrispondenti alle 16 bombe
-- [] Definire il numero massimo di tentativi consentiti (100 - 16)
-- [] Generare l'array dei numeri che non sono bombe, cliccate dall'utente, per avere il punteggio
+- [X] Generare un array di 16 numeri random non duplicati compresi nel range di gioco (da 1 a 100) corrispondenti alle 16 bombe
+- [X] Definire il numero massimo di tentativi consentiti (100 - 16)
+- [X] Generare l'array dei numeri che non corrispondono ad una bomba, cliccate dall'utente, per avere il punteggio
 - [X] Mostrare la griglia
-- [] Creare le 100 celle del gioco, per ogni numero da 1 a 100:
+- [X] Creare le 100 celle del gioco, per ogni numero da 1 a 100:
     - [X] Creare la cella
     - [X] Inserire il numero all'interno della cella
     - [x] Aggiungere event listener "click" alla cella generata
@@ -21,14 +21,15 @@ Quando l'utente clicca sul bottone "start":
 
 Al click sulla cella della griglia: 
 - [X] Leggere il numero cliccato
-- [] SE il numero cliccato è presente nell'array delle bombe 
-    - [] La cella diventa rossa
-    - [] Il gioco finisce - l'utente perde
-- [] ALTRIMENTI
-    - [] La cella diventa rosa
-    - [] SE questo numero non è stato già cliccato precedentemente
-        - [] Aggiungere il numero all'array dei numeri cliccati ("non bombe")
-    - [] SE la lunghezza dell'array di "non bombe" uguale all'array del numero massimo di tentativi consentiti
-        - [] Il gioco finisce - l'utente vince 
+- [X] SE il numero cliccato è presente nell'array delle bombe 
+    - [X] La cella diventa rossa
+    - [X] Il gioco finisce - l'utente perde
+- [X] ALTRIMENTI
+    - [X] La cella diventa rosa
+    - [X] SE questo numero non è stato già cliccato precedentemente
+        - [X] Aggiungere il numero all'array dei numeri cliccati ("non bombe")
+    - [X] SE la lunghezza dell'array di "non bombe" è uguale all'array del numero massimo di tentativi consentiti
+        - [X] Il gioco finisce - l'utente vince 
+        - [X] Viene stampato in pagina il messaggio di vittoria dell'utente e il numero di volte che l'utente ha cliccato su una cella senza bomba
 
 
