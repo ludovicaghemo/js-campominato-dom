@@ -42,3 +42,6 @@ Al click sulla cella della griglia:
     - [X] Fine del gioco - non eseguire altre istruzioni 
     - [X] Quando l'utente vince o perde
         - [X] Impostare gameOver = true; 
+
+![preview-lost](img/preview-lost.png)
+![preview-won](img/preview-won.png)
