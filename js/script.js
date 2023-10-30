@@ -22,6 +22,9 @@ const maxClicks = gridSize - bombs.length;
 // Generare l'array dei numeri che non corrispondono ad una bomba
 let bombFreeCells = []; 
 
+// Impostare una variabile globale che defiisca la fine del gioco
+let gameOver = false; 
+
 
 /****************************/
 // FUNZIONI
@@ -62,10 +65,15 @@ function handleClick() {
         curCell.addEventListener("click", function () {
             const clickedCell = parseInt(this.textContent);
             console.log(clickedCell);
+            if (gameOver) {
+                return;
+            }
             if (bombs.includes(clickedCell)) {
                 curCell.classList.add("clicked-bomb");
                 console.log("Hai perso");
-                exitMessage.innerHTML = "Peccato, hai perso!";
+                exitMessage.innerHTML = `Peccato, hai perso! Ecco il tuo punteggio ${score}`;
+                // Fine del gioco
+                gameOver = true;
             } else {
                 curCell.classList.add("clicked-cell");
                 // Se il numero non è stato cliccato precedentemente, lo aggiungo all'array dei numeri cliccati (non bombe)
@@ -80,6 +88,8 @@ function handleClick() {
             if (bombFreeCells.length === maxClicks) {
                 console.log("Hai vinto");
                 exitMessage.innerHTML = `Complimenti, hai vinto! Ecco il tuo punteggio ${score}`;
+                // Fine del gioco
+                gameOver = true;
             }
         })
         gridElem.append(curCell);

@@ -7,6 +7,9 @@ In seguito l'utente clicca su una cella: se il numero è presente nella lista de
 La partita termina quando il giocatore clicca su una bomba o raggiunge il numero massimo possibile di numeri consentiti.
 Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
+**Bonus** 
+Quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle
+
 ## Esecuzione
 Quando l'utente clicca sul bottone "start": 
 - [X] Generare un array di 16 numeri random non duplicati compresi nel range di gioco (da 1 a 100) corrispondenti alle 16 bombe
@@ -32,4 +35,10 @@ Al click sulla cella della griglia:
         - [X] Il gioco finisce - l'utente vince 
         - [X] Viene stampato in pagina il messaggio di vittoria dell'utente e il numero di volte che l'utente ha cliccato su una cella senza bomba
 
-
+Quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle:
+Al click sulla cella della griglia: 
+- [] Impostare una variabile globale gameOver che defiisca la fine del gioco
+- [] SE gameOver = true
+    - [] Fine del gioco - non eseguire altre istruzioni 
+    - [] Quando l'utente vince o perde
+        - [] Impostare gameOver = true; 
