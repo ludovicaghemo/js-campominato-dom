@@ -37,8 +37,8 @@ Al click sulla cella della griglia:
 
 Quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle:
 Al click sulla cella della griglia: 
-- [] Impostare una variabile globale gameOver che defiisca la fine del gioco
-- [] SE gameOver = true
-    - [] Fine del gioco - non eseguire altre istruzioni 
-    - [] Quando l'utente vince o perde
-        - [] Impostare gameOver = true; 
+- [X] Impostare una variabile globale gameOver che defiisca la fine del gioco
+- [X] SE gameOver = true
+    - [X] Fine del gioco - non eseguire altre istruzioni 
+    - [X] Quando l'utente vince o perde
+        - [X] Impostare gameOver = true; 

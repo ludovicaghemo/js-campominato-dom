@@ -1,6 +1,7 @@
 /* ROOT */
 :root {
     --header-height: 60px;
+    --footer-height: 60px;
     --wrapper-bg-color: rgb(12, 176, 176);
     --header-bg-color: pink;
     --clicked-cell-bg-color: pink;
@@ -47,7 +48,7 @@ header {
 }
 
 .container {
-    height: calc(100% - 142px);
+    height: calc(100vh - 140px);
     padding-top: 3rem;
     display: flex;
     align-items: center;
@@ -74,8 +75,9 @@ header {
 
 .exit-title {
     text-align: center;
+    color: red;
+    font-size: 2rem;
 }
-
 .clicked-cell {
     background-color: var(--clicked-cell-bg-color);
 }
